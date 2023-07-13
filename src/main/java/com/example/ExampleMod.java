@@ -22,8 +22,8 @@ public class ExampleMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		RegistratingAllSounds.registerAllSounds();
 		RegistratingAllBlocks.registerAllBlocks();
+		RegistratingAllSounds.registerAllSounds();
 		LOGGER.info("Hello Fabric world!");
 	}
 }

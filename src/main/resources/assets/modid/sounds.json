@@ -1,7 +1,12 @@
 {
-  "anton_block_sound": {
+  "anton_block_break_sound": {
     "sounds": [
-      "modid:anton_block_sound"
+      "modid:anton_block_break_sound"
+    ]
+  },
+  "anton_block_use_sound": {
+    "sounds": [
+      "modid:anton_block_use_sound"
     ]
   }
 }
