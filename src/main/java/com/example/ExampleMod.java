@@ -1,7 +1,16 @@
 package com.example;
 
+import com.example.elements.blocks.AntonBlock;
+import com.example.register.sounds.SoundRegister;
+import com.example.registrating.blocks.RegistratingAllBlocks;
+import com.example.registrating.sounds.RegistratingAllSounds;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.sound.SoundEvent;
+import net.minecraft.sound.SoundEvents;
+import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -13,10 +22,8 @@ public class ExampleMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		// This code runs as soon as Minecraft is in a mod-load-ready state.
-		// However, some things (like resources) may still be uninitialized.
-		// Proceed with mild caution.
-
+		RegistratingAllSounds.registerAllSounds();
+		RegistratingAllBlocks.registerAllBlocks();
 		LOGGER.info("Hello Fabric world!");
 	}
 }
