@@ -3,6 +3,7 @@ package com.example;
 import com.example.elements.blocks.AntonBlock;
 import com.example.register.sounds.SoundRegister;
 import com.example.registrating.blocks.RegistratingAllBlocks;
+import com.example.registrating.items.RegistratingAllItems;
 import com.example.registrating.sounds.RegistratingAllSounds;
 import net.fabricmc.api.ModInitializer;
 
@@ -24,6 +25,7 @@ public class ExampleMod implements ModInitializer {
 	public void onInitialize() {
 		RegistratingAllBlocks.registerAllBlocks();
 		RegistratingAllSounds.registerAllSounds();
+		RegistratingAllItems.registerAllItems();
 		LOGGER.info("Hello Fabric world!");
 	}
 }

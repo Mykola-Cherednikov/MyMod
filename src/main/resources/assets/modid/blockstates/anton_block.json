@@ -1,5 +1,12 @@
 {
   "variants": {
-    "": { "model": "modid:block/anton_block" }
+    "facing=north,charged=false": { "model": "modid:block/anton_block" },
+    "facing=east,charged=false":  { "model": "modid:block/anton_block","y":  90 },
+    "facing=south,charged=false": { "model": "modid:block/anton_block","y":  180 },
+    "facing=west,charged=false":  { "model": "modid:block/anton_block","y":  270 },
+    "facing=north,charged=true": { "model": "block/polished_andesite" },
+    "facing=east,charged=true":  { "model": "block/polished_andesite","y":  90 },
+    "facing=south,charged=true": { "model": "block/polished_andesite","y":  180 },
+    "facing=west,charged=true":  { "model": "block/polished_andesite","y":  270 }
   }
 }
