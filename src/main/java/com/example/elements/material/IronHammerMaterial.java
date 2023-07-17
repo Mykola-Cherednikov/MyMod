@@ -1,31 +1,29 @@
 package com.example.elements.material;
 
-
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
-public class PultOtYaderkiMaterial implements ToolMaterial {
-
-    public static final PultOtYaderkiMaterial INSTANCE = new PultOtYaderkiMaterial();
+public class IronHammerMaterial implements ToolMaterial {
+    public static final IronHammerMaterial INSTANCE = new IronHammerMaterial();
 
     @Override
     public int getDurability() {
-        return 1;
+        return 1000;
     }
 
     @Override
     public float getMiningSpeedMultiplier() {
-        return 0;
+        return 4f;
     }
 
     @Override
     public float getAttackDamage() {
-        return 0;
+        return 5;
     }
 
     @Override
     public int getMiningLevel() {
-        return 0;
+        return 2;
     }
 
     @Override
